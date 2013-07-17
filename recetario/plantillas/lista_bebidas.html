@@ -13,5 +13,16 @@
 			<li>{{elemento.preparacion}}</li>
 		</ul>
 		{% endfor %}
+
+		<h1>Recetas</h1>
+		{% for receta in lista_recetas %}
+		<ul>
+			<li><strong>{{receta.titulo}}</strong></li>
+			<li>{{receta.ingredientes}}</li>
+			<li>{{receta.preparacion}}</li>
+			<li>{{receta.imagen}}</li>
+			<li>{{receta.usuario}}</li>
+		</ul>
+		{% endfor %}
 	</body>
 </html>
