@@ -1,14 +1,6 @@
 #encoding:utf-8
 from django.db import models
 from django.contrib.auth.models import User
-
-class Bebida(models.Model):
-	nombre = models.CharField(max_length=50)
-	ingredientes = models.TextField()
-	preparacion = models.TextField()
-
-	def __unicode__(self):
-		return self.nombre
 		
 class Receta(models.Model):
 	#Dato cadena, longitud máxima 100 y único
@@ -26,4 +18,12 @@ class Receta(models.Model):
 
 	def __unicode__(self):
 		return self.titulo
+
+class Comentario(models.Model):
+	receta = models.ForeignKey(Receta)
+	texto = models.TextField(help_text='Tu Comentario', verbose_name='Comentario')
+
+	def __unicode__(self):
+		return self.texto
+		
 		
