@@ -160,3 +160,10 @@ LOGGING = {
         },
     }
 }
+
+#Configuraciones para enviar mensajes usando gmail
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'yiyocx@gmail.com'
+EMAIL_HOST_PASSWORD = 'drakma931224'
+EMAIL_PORT = 587

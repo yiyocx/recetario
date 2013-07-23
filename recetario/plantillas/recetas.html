@@ -7,12 +7,13 @@
 </style>
 {% endblock %}
 
-
 {% block encabezado %}
 	<h1>Nuestras recetas</h1>
+
 {% endblock %}
 
 {% block contenido %}
+<a href="/receta/nueva">Agregar una receta</a>
 <ul>
 	{% for dato in datos %}
 	<li>
